@@ -37,4 +37,4 @@ jobs:
       - name: Build with Maven
         run: mvn -B package --file pom.xml
       - name: rsync over ssh
-        run: rsync target/aliens-1.0-SNAPSHOT.jar ${{ secrets.SSH_USER }}@${{ secrets.HOST_IP }}:/      
+        run: rsync target/aliens-1.0-SNAPSHOT.jar ${{ secrets.SSH_USER }}@${{ secrets.HOST_IP }}:/home/ec2-user      
